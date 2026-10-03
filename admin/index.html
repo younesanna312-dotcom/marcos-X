@@ -1,0 +1,12 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BABOUR SHOP — Admin</title><link rel="stylesheet" href="../assets/style.css"></head><body>
+<header><a class="brand" href="../"><b>BA</b>BOUR <span>ADMIN</span></a><div class="head-actions"><button id="logout">تسجيل الخروج</button></div></header>
+<main class="section"><div id="guard" class="loading">جاري التحقق من صلاحيات المدير...</div><div id="admin" style="display:none">
+<div class="section-title"><div><small>CONTROL PANEL</small><h2>لوحة إدارة BABOUR SHOP</h2></div></div>
+<div class="admin-grid">
+<section class="admin-card"><h3>➕ إضافة منتج</h3><input id="name" placeholder="اسم المنتج"><input id="category" placeholder="التصنيف"><input id="price" type="number" placeholder="السعر DH"><input id="badge" placeholder="شارة مثل جديد"><input id="image" placeholder="رابط الصورة (اختياري)"><input id="file" type="file" accept="image/*"><button class="btn main" id="addProduct">إضافة المنتج</button><p id="msg"></p></section>
+<section class="admin-card"><h3>📦 المنتجات</h3><div id="products">جاري التحميل...</div></section>
+<section class="admin-card wide"><h3>🧾 الطلبات</h3><div id="orders">جاري التحميل...</div></section>
+</div></div></main>
+<script type="module" src="./admin.js"></script>
+<style>.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.admin-card{background:#101419;border:1px solid #252d36;border-radius:18px;padding:20px}.admin-card.wide{grid-column:1/-1}.admin-card input,.admin-card select{display:block;width:100%;margin:8px 0;padding:11px;background:#080b0f;color:#fff;border:1px solid #2a323c;border-radius:9px;font:inherit}.admin-row{display:flex;gap:8px;align-items:center;justify-content:space-between;border-bottom:1px solid #252d36;padding:10px 0}.danger{background:#32151a!important;color:#ff7c86!important;border-color:#55242b!important}@media(max-width:800px){.admin-grid{grid-template-columns:1fr}.admin-card.wide{grid-column:auto}}</style>
+</body></html>

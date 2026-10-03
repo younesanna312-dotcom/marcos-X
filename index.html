@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b0e"><title>BABOUR SHOP</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="top">🚚 توصيل سريع • 🛡️ متجر موثوق • 📞 خدمة العملاء</div>
+<header>
+  <a class="brand" href="#"><b>BA</b>BOUR <span>SHOP</span></a>
+  <nav><a href="#home">الرئيسية</a><a href="#products">المنتجات</a><a href="#about">لماذا نحن</a></nav>
+  <div class="head-actions"><button id="loginBtn">تسجيل الدخول</button><button class="cart" id="cartBtn">🛒 <i id="cartCount">0</i></button></div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div><small>BABOUR SHOP • PREMIUM STORE</small><h1>تسوق بشكل<br><em>أذكى.</em></h1>
+  <p>منتجات مختارة، أسعار واضحة، وطلب مباشر من الموقع. صممنا BABOUR SHOP ليكون سريعًا وسهلًا على الهاتف والكمبيوتر.</p>
+  <div class="actions"><a class="btn main" href="#products">ابدأ التسوق</a><a class="btn" href="#about">اعرف المزيد</a></div></div>
+  <div class="hero-art"><div class="orb"></div><strong>BABOUR</strong><span>SHOP</span><label>NEW COLLECTION</label></div>
+</section>
+
+<section id="products" class="section">
+<div class="section-title"><div><small>STORE</small><h2>منتجاتنا</h2></div><div id="categories" class="cats"></div></div>
+<div id="productsGrid" class="grid"><div class="loading">جاري تحميل المنتجات...</div></div>
+</section>
+
+<section id="about" class="features">
+<div><b>⚡</b><h3>سريع</h3><p>موقع خفيف ومتوافق مع GitHub Pages.</p></div>
+<div><b>🔐</b><h3>آمن</h3><p>تسجيل الدخول وقواعد Firebase للتحكم في البيانات.</p></div>
+<div><b>📦</b><h3>إدارة كاملة</h3><p>لوحة Admin للمنتجات والطلبات والصور.</p></div>
+</section>
+</main>
+
+<footer><div class="brand"><b>BA</b>BOUR <span>SHOP</span></div><p>© <span id="year"></span> BABOUR SHOP</p></footer>
+
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="x" id="closeModal">×</button><div id="modalContent"></div></div></div>
+<aside id="cartPanel"><div class="cart-head"><h2>السلة</h2><button id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-bottom"><strong>المجموع: <span id="total">0 DH</span></strong><button class="btn main" id="checkout">تأكيد الطلب</button></div></aside><div id="shade"></div>
+<div id="toast"></div>
+<script type="module" src="assets/app.js"></script>
+</body></html>
