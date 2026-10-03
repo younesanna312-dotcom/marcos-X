@@ -1,0 +1,1 @@
+document.querySelectorAll("a.btn").forEach(a=>a.addEventListener("click",()=>{a.style.opacity=".7"}));
